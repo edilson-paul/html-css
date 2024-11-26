@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso em videos exemplos</title>
+    <style>
+        mark{
+            background-color: limegreen;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Principais formatações</h1>
+        <h2>Negrito/Destaque</h2>
+        <p>Nessa frase temos um <b>termo em negrito</b> usando a &lt;b&gt; (não semântica)</p>
+        <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a &lt;strong&gt; (semântica)</p>
+        <h2>Itálico/ Ênfase</h2>
+        <p>Nessa frase temos um <i>termo em itálico</i> usando a &lt;i&gt; (não semântica)</p>
+        <p>Nessa frase <em>temos um termo em ênfase</em>  usando a &lt;em&gt; (semântica)</p>
+        <h2>Texto marcado</h2>
+        <p>Podemos criar também <mark>um texto marcado</mark> usando a &lt;mark&gt;</p>
+        <h2>Texto grande e pequeno</h2>
+        <p>Podemos crair um <big>texto grande</big> e <small>um texto pequeno</small></p>
+        <!-- big é uma tag obsoleto, não é semântico-->
+        <h2>Texto deletado</h2>
+        <p>Podemos marcar um <del>texto como excluido</del> para indicar que ele dever ser lido, ma não considerado.</p>
+        <h2>Texto inserido</h2>
+        <p>Podemos marcar um <ins>texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado.</p>
+        <h2>Texto subrescrito</h2>
+        <p>Para inserir coisas do tipo x <sub>20</sub> + 3</p>
+        <h2>Texto subscrito</h2>
+        <p>Para inserir coisas do tipo H <sub>2</sub>O</p>
+    </article>
+
+    <article>
+        <h1>Outras formatações</h1>
+        <h2>Código Fonte / Pré-formatação</h2>
+        <p>O comado<code> document.getElementById ('teste')</code> é escrito em linguagem JavaScript</p>
+        <pre>
+            <code>
+                num = int(input('Digite um número'))
+                if num % 2 == 0;
+                    print(f'O número {num} é PAR')
+                else:
+                    print(f'O número {num} é IMPAR')
+                print('Fim do programa')
+            </code>
+        </pre>
+
+        <h2>Citações simples</h2>
+        <p>Como o <strong>Albert Eisten</strong> disse: <q>O tempo e o espaço são relativos e não absolutos. O que quer dizer que o tempo pode passar de maneira diferente para observadores diferentes.</q></p>
+        <h2>Citações Completas</h2>
+        <p>Segundo a Wizvrd, no seu livro Run or Die:</p>
+        <blockquote cite="www.wikipedia/wizvrd.com">
+            Os sonhos serão sempre sonhos.
+        </blockquote>
+
+        <h2>Abreviações</h2>
+        <p>O <abbr title="HyperText Markup Language">HTML</abbr>e as <abbr title="Cascading Style Sheets">CSS</abbr> não são linguagens de programação.</p>
+
+        <h2>Textos invertido</h2>
+        <p><bdo dir="rtl">Os sonhos serão sempre sonhos</bdo></p>
+
+        <p><a href="links.html" rel="prev">Voltar a página anterior</a></p>
+    </article>
+
+
+</body>
+</html>

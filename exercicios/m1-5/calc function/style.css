@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calc() allows us to make a calcul using arithemetics operactions...*/
+
+.s{
+    background-color: crimson;
+    text-align: center;
+    color: #fff;
+    width: calc(100px + 100px );
+    height: calc(50px - 10px);
+    border-radius: 15px calc(15px/10) 4px 2px;
+    padding: calc(400px / 100);
+    margin: calc(20px * 2);
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRY CSS</title>
+</head>
+<style>
+    body{
+        background-color: lightblue;
+        margin: 100px auto;
+    }
+    
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        max-width: 520px;
+        width: 100%;
+    }
+
+    .btn{
+        width: 150px;
+        border: 1px solid #fff;
+        background-color: #111;
+        color: #fff;
+        font-weight: 400;
+        padding: 1em 2em;
+        border-radius: 6px;
+    }
+
+    .btn-secundary{
+        background-color: green;
+    }
+
+    /* BAD PRACTICE */
+
+    /* .btn.btn-secundary{
+        width: 150px;
+        border: 1px solid #fff;
+        background-color: green;
+        color: #fff;
+        font-weight: 400;
+        padding: 1em 2em;
+        border-radius: 6px;
+    } */
+
+
+</style>
+<body>
+    <section>
+        <button class="btn">Learn More</button>
+        <button class="btn btn-secundary">Download</button>
+    </section>
+</body>
+</html>

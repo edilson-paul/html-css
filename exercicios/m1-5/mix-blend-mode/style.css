@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #103f3f;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.s{
+    height: 100vh;
+    background-image: url(public/undraw_design_1w1r.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: center;
+    mix-blend-mode: overlay;
+    /* there are a lots of options to use with mix-blend-mode you can do your own tests. */
+}
+
+h1{
+    font-size: 32px;
+    padding-top: calc(10px * 4);
+    color: #222;
+}

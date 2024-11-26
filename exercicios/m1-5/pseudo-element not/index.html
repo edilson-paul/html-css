@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <style>
+
+        body{
+            background-color: #222;
+            margin: 100px auto;
+            padding: 10px;
+        }
+
+        section{
+            background-color: #111;
+            color: white;
+            padding: 4em;
+        }
+
+        .title{
+            text-align: center;
+        }
+
+        .content, .article{
+            font-weight: 500;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        section .article:not(.content),
+        section .title{
+            color: blueviolet;
+        }
+
+        button:not([disabled]){
+            font-size: 18px;
+            color: #fff;
+            background-color: crimson;
+        }
+
+        aside > nav{
+            text-align: right;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: blueviolet;
+            margin: 10px;
+            transition-duration: .3s;
+        }
+
+        nav > a :nth-child(2){
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1 class="title">Title</h1>
+        <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi amet aliquid, fugiat nostrum voluptates eaque voluptatibus delectus quam repudiandae commodi architecto molestiae, nulla excepturi nesciunt ratione. Eum accusamus soluta itaque.</p>
+        <p class="article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eligendi ipsum unde doloremque cum soluta minus quis quasi iure consectetur, maiores veniam. Minima, a qui. Earum molestias iure omnis reprehenderit?</p>
+        <aside>
+            <button>Button A</button>
+            <button>Button B</button>
+            <button disabled>Button C</button>
+        </aside>
+        <aside>
+            <nav>
+                <a href="#intro">Intro link</a>
+                <a href="#hero">Hero link</a>
+                <a href="#content">Content link</a>
+            </nav>
+        </aside>
+    </section>
+
+</body>
+</html>

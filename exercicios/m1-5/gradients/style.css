@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    color: #fff;
+}
+
+body{
+    background-color: rgb(12, 12, 76);
+    /* background-image: linear-gradient(rgba(0, 128, 0, 0.498), rgba(0, 0, 255, 0.187)), url(image/ilha.jpg); */
+    /* background-image: radial-gradient(rgba(20, 210, 48, 0.447), rgba(0, 0, 255, 0.137)), url(image/ilha.jpg); */
+    /* background-image: url(image/ilha.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh; */
+
+    /* filter: blur(10%); */
+    /* filter: brightness(90%); */
+    /* filter: grayscale(70%); */
+}
+
+.container{
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-template-areas: 
+    "h h h h"
+    "a . m m"
+    "s . m m"
+    "f f f f";
+}
+
+header{
+    grid-area: h;
+}
+
+main{
+    grid-area: m;
+}
+
+section{
+    grid-area: s;
+}
+
+aside{
+    grid-area: a;
+}
+
+footer{
+    grid-area: f;
+}
+
+.s{
+    background-color: #222;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #fff;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupies Tag</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            background-color: #fff;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px 0;
+        }
+
+        nav ul li{
+            display: inline-block;
+            list-style: none;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: lightskyblue;
+        }
+
+        main{
+            text-align: center;
+            margin: 40px;
+        }
+
+        section{
+            background-color: rgb(66, 148, 224);
+            padding: 10px;
+            margin-right: 20px;
+            border-radius: 6px;
+            width: 300px;
+            display: inline-block;
+            box-shadow: 2px 2px 1px #000000b5;
+            cursor: pointer;
+            transition-duration: .3s;
+        }
+
+        section + section{
+            
+        }
+        
+        section:hover{
+            transform: scale(1.2);
+        }
+        
+        article{
+            border: 1px solid #fff;
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        article h2{
+            color: rgb(223, 231, 234);
+            font-weight: 400;
+        }
+
+        article p{
+            text-align: justify;
+            font-size: 0.9em;
+            line-height: 1.3;
+            margin-bottom: 4px;
+        }
+
+        aside{
+            font-weight: 400;
+            font-size: 0.8rem;
+            color: #fff;
+            text-align: right;
+        }
+
+        footer{
+            text-align: center;
+            background-color: #555;
+            margin: 20px;
+            padding: 40px;
+            border-radius: 6px;
+            color: #fff;
+
+        }
+
+        #info{
+            margin: 20px;
+            color: #555;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        #bola{
+            height: 100px;
+            aspect-ratio: 1/1;
+            background-color: transparent;
+            border: 1px solid #222;
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Principal título</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Link</a></li>
+                <li><a href="/">Link</a></li>
+                <li><a href="/">Link</a></li>
+                <li><a href="/">Link</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <article>
+                <h2>Conteudo 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis deleniti quidem pariatur voluptatum expedita rerum esse aliquid accusamus ducimus ratione animi neque, ut nihil provident debitis deserunt iure non earum?</p>
+                <aside>Escrito por John Doe</aside>
+            </article>
+        </section>
+        <section id="news">
+            <article>
+                <h2>Conteudo 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis deleniti quidem pariatur voluptatum expedita rerum esse aliquid accusamus ducimus ratione animi neque, ut nihil provident debitis deserunt iure non earum?</p>
+                <aside>Escrito por John Doe</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Edilson Paulo</p>
+    </footer>
+
+    <p id="info">Isto é apenas um exemplo de como a semâtica funciona em HTML!</p>
+
+    <div id="bola"></div>
+</body>
+</html>

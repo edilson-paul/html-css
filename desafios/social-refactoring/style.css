@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: lightgray;
+}
+
+.container{
+    padding: 20px;
+    color: #222;
+}
+
+.profile{
+    width: 160px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#my-name{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#my-bio{
+    margin-top: -10px;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+
+.skills{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.skills li{
+    border: 1px solid #222;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+.skills li:hover{
+    background-color: #222;
+    color: #fff;
+}
