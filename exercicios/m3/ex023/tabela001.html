@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Tabelas</title>
+    <style>
+
+        body{
+            background-color: rgb(61, 61, 134);
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        table{
+            width: 200px;
+            aspect-ratio: 1/1;
+            border-collapse: collapse;
+        }
+
+        td{
+            border: 1px solid #fff;
+            padding: 4px;
+            text-align: center; /*Alinhamento horizontal*/
+            vertical-align: top; /*Alinhamento vertical*/
+        }
+
+        /* tr.test{
+            background-color: dodgerblue;
+        }
+
+        td.test1{
+            background-color: peru;
+        } */
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!-- HIERARQUIA DAS TABELAS
+     TABLE = Tabela
+     Table row = linha da tabela
+     Table header = cabecalho
+     Table data = dados da tabel -->
+
+     <!-- O fechamento das tags tr e td nao e obrigatorio -->
+
+     <table>
+        <!-- <tr>
+            <th>Exemplo 1</th>
+        </tr> -->
+        <tr class="test"> <!--primeira linha-->
+            <td>A1
+            <td>B1
+            <td>C1
+        </tr>
+        <tr> <!--segunda linha-->
+            <td>A2</td>
+            <td class="test1">B2</td>
+            <td>C2</td>
+        </tr>
+        <tr> <!--terceira linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+     </table>
+</body>
+</html>
