@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 1px;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        td, th{
+            border: 1px solid #222;
+            padding: 10px;
+        }
+
+        .cnome{
+            background-color: peru;
+        }
+
+        .csexo{
+            background-color: antiquewhite;
+        }
+
+        .cidade{
+            background-color: aliceblue;
+        }
+
+        .cprof{
+            background-color: azure;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Estilizando Colunas</caption>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <thead>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Edilson Paulo</td>
+                <td>M</td>
+                <td>18</td>
+                <td>Estudante</td>
+            </tr>
+            <tr>
+                <td>Nelson Diastre</td>
+                <td>M</td>
+                <td>35</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Paulo Alison</td>
+                <td>M</td>
+                <td>23</td>
+                <td>Jurista</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
