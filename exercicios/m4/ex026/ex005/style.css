@@ -100,4 +100,8 @@ article > p{
         border: 1px solid rgba(147, 133, 108, 0.445);
         border-radius: 2px;
     }
+
+    main{
+        width: 768px;
+    }
 }

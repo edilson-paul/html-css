@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-<body>
+<body onresize="mudoTamanho()">
     <header>
         <h1>Título</h1>
         <span id="burger" class="material-symbols-outlined" onclick="carregar()">
@@ -41,8 +41,14 @@
 
 
     <script>
-       let menu = document.getElementById('menu');
 
+        function mudoTamanho(){
+            if(window.innerWidth >= 768){
+                menu.style.display = 'block'
+            }else{
+                menu.style.display = 'none'
+            }
+        }
         function carregar(){
 
             if(menu.style.display == "block"){
