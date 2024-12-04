@@ -1,0 +1,7 @@
+/* Configurações para aparelhos em pé (retrato) */
+
+
+body{
+  background-image: url('../image/cev-portrait.jpg');
+  background-position: left bottom;
+}
