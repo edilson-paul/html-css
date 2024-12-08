@@ -7,17 +7,20 @@
     <style>
       .container{
         background-color: peru;
-        height: 300px;
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-evenly;
-        align-items: center;
+        flex-flow: row wrap;
+       
       }
-      
+
       .items{
+        /* flex-basis: 150px;
+        flex-shrink: 1;
+        flex-grow: 1; */
+        flex: 1 1 150px;
         background-color: plum;
         border: 1px solid #111;
-        text-align-last: center;
+        text-align: center;
+        padding: 10px;
       }
     </style>
 </head>

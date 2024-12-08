@@ -7,27 +7,36 @@
     <style>
       .container{
         background-color: peru;
-        height: 300px;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-evenly;
-        align-items: center;
+       
       }
-      
+
       .items{
         background-color: plum;
         border: 1px solid #111;
-        text-align-last: center;
+        text-align: center;
+        padding: 10px;
+      }
+
+      #i1{ 
+       flex: 1 2 200px;
+      }
+
+      #i2{
+        flex: 1 2 200px;
+      }
+
+      #i3{
+        flex: 1 2 200px;
       }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="items">A</div>
-        <div class="items">B</div>
-        <div class="items">C</div>
-        <div class="items">D</div>
-        <div class="items">E</div>
+        <div class="items" id="i1">A</div>
+        <div class="items" id="i2">B</div>
+        <div class="items" id="i3">C</div>
     </div>
 </body>
 </html>
